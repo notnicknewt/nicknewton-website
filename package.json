@@ -1,14 +1,22 @@
 {
-  "name": "website",
+  "name": "nicknewton-coach",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "start": "npx serve dist -l $PORT",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.16.8"
+    "@astrojs/tailwind": "^6.0.2",
+    "astro": "^4.16.18",
+    "serve": "^14.2.0",
+    "tailwindcss": "^3.4.19"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "typescript": "^5.7.2"
   }
 }

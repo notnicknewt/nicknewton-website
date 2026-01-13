@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Growth dashboard with charts">
+  <defs>
+    <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4EA1FF" stop-opacity="0.35"></stop>
+      <stop offset="1" stop-color="#4EA1FF" stop-opacity="0.05"></stop>
+    </linearGradient>
+
+    <style>
+      .title { font: 700 30px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #F2F4F8; }
+      .sub { font: 500 14px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #A7B0C0; }
+      .kpiLabel { font: 700 12px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #A7B0C0; letter-spacing: .5px; }
+      .kpiValue { font: 800 26px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #F2F4F8; }
+      .kpiDeltaUp { font: 800 12px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #53F0B1; }
+      .kpiDeltaDn { font: 800 12px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #FF6B6B; }
+      .cardTitle { font: 800 16px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #F2F4F8; }
+      .axis { font: 700 11px system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; fill: #8F9AAF; }
+      .grid { stroke: #1A1A1A; stroke-width: 1; }
+      .card { fill: #0B0B0B; stroke: #1F1F1F; }
+      .plot { fill: #070707; stroke: #1F1F1F; }
+      .stroke { stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="700" fill="#000000"></rect>
+
+  <!-- Header -->
+  <text x="60" y="72" class="title">Growth Dashboard</text>
+  <text x="60" y="100" class="sub">Overview of performance — last 12 weeks</text>
+
+  <!-- KPI Cards -->
+  <rect x="60" y="130" width="340" height="110" rx="20" class="card"></rect>
+  <rect x="430" y="130" width="340" height="110" rx="20" class="card"></rect>
+  <rect x="800" y="130" width="340" height="110" rx="20" class="card"></rect>
+
+  <text x="90" y="170" class="kpiLabel">NEW LEADS</text>
+  <text x="90" y="205" class="kpiValue">1,284</text>
+  <text x="285" y="205" class="kpiDeltaUp">▲ 18.4%</text>
+
+  <text x="460" y="170" class="kpiLabel">CALLS BOOKED</text>
+  <text x="460" y="205" class="kpiValue">146</text>
+  <text x="650" y="205" class="kpiDeltaUp">▲ 9.1%</text>
+
+  <text x="830" y="170" class="kpiLabel">CLOSE RATE</text>
+  <text x="830" y="205" class="kpiValue">22.6%</text>
+  <text x="1020" y="205" class="kpiDeltaDn">▼ 1.2%</text>
+
+  <!-- Chart Cards -->
+  <rect x="60" y="270" width="710" height="370" rx="24" class="card"></rect>
+  <rect x="800" y="270" width="340" height="175" rx="24" class="card"></rect>
+  <rect x="800" y="465" width="340" height="175" rx="24" class="card"></rect>
+
+  <text x="90" y="315" class="cardTitle">Weekly Revenue</text>
+  <text x="90" y="340" class="sub">Trend line (GBP)</text>
+
+  <text x="830" y="315" class="cardTitle">Leads by Source</text>
+  <text x="830" y="340" class="sub">This month</text>
+
+  <text x="830" y="510" class="cardTitle">Conversions</text>
+  <text x="830" y="535" class="sub">Rolling 8 weeks</text>
+
+  <!-- LINE CHART -->
+  <g transform="translate(90,360)">
+    <rect x="0" y="0" width="650" height="240" rx="16" class="plot"></rect>
+
+    <!-- Grid -->
+    <line class="grid" x1="0" y1="48" x2="650" y2="48"></line>
+    <line class="grid" x1="0" y1="96" x2="650" y2="96"></line>
+    <line class="grid" x1="0" y1="144" x2="650" y2="144"></line>
+    <line class="grid" x1="0" y1="192" x2="650" y2="192"></line>
+
+    <!-- X labels -->
+    <text class="axis" x="0" y="265">W1</text>
+    <text class="axis" x="114" y="265">W3</text>
+    <text class="axis" x="228" y="265">W5</text>
+    <text class="axis" x="342" y="265">W7</text>
+    <text class="axis" x="456" y="265">W9</text>
+    <text class="axis" x="570" y="265">W11</text>
+
+    <!-- Area -->
+    <path d="M 0 190
+             L 59 168
+             L 118 182
+             L 177 150
+             L 236 138
+             L 295 122
+             L 354 140
+             L 413 110
+             L 472 98
+             L 531 86
+             L 590 70
+             L 650 58
+             L 650 240
+             L 0 240 Z" fill="url(#areaGrad)"></path>
+
+    <!-- Line -->
+    <path class="stroke" d="M 0 190
+                            L 59 168
+                            L 118 182
+                            L 177 150
+                            L 236 138
+                            L 295 122
+                            L 354 140
+                            L 413 110
+                            L 472 98
+                            L 531 86
+                            L 590 70
+                            L 650 58" fill="none" stroke="#4EA1FF" stroke-width="4"></path>
+
+    <!-- Points -->
+    <g fill="#0B0B0B" stroke="#4EA1FF" stroke-width="3">
+      <circle cx="0" cy="190" r="5"></circle>
+      <circle cx="59" cy="168" r="5"></circle>
+      <circle cx="118" cy="182" r="5"></circle>
+      <circle cx="177" cy="150" r="5"></circle>
+      <circle cx="236" cy="138" r="5"></circle>
+      <circle cx="295" cy="122" r="5"></circle>
+      <circle cx="354" cy="140" r="5"></circle>
+      <circle cx="413" cy="110" r="5"></circle>
+      <circle cx="472" cy="98" r="5"></circle>
+      <circle cx="531" cy="86" r="5"></circle>
+      <circle cx="590" cy="70" r="5"></circle>
+      <circle cx="650" cy="58" r="5"></circle>
+    </g>
+
+    <!-- Tooltip -->
+    <g transform="translate(460,16)">
+      <rect x="0" y="0" width="170" height="56" rx="14" fill="#000000" stroke="#1F1F1F"></rect>
+      <text x="14" y="22" class="sub">Week 10</text>
+      <text x="14" y="44" class="kpiValue" style="font-size:18px;">GBP 12,480</text>
+    </g>
+  </g>
+
+  <!-- BAR CHART (top-right) -->
+  <g transform="translate(830,355)">
+    <rect x="0" y="0" width="280" height="88" rx="16" class="plot"></rect>
+
+    <!-- Bars (kept inside the plot box) -->
+    <rect x="24" y="42" width="36" height="34" rx="8" fill="#4EA1FF"></rect>
+    <rect x="88" y="30" width="36" height="46" rx="8" fill="#53F0B1"></rect>
+    <rect x="152" y="50" width="36" height="26" rx="8" fill="#FFB020"></rect>
+    <rect x="216" y="22" width="36" height="54" rx="8" fill="#FF6B35"></rect>
+
+    <!-- Labels (inside card, below the plot) -->
+    <text class="axis" x="28" y="112">IG</text>
+    <text class="axis" x="92" y="112">TT</text>
+    <text class="axis" x="150" y="112">Ref</text>
+    <text class="axis" x="214" y="112">Ads</text>
+  </g>
+
+  <!-- AREA CHART (bottom-right) -->
+  <g transform="translate(830,545)">
+    <rect x="0" y="0" width="280" height="88" rx="16" class="plot"></rect>
+
+    <line class="grid" x1="0" y1="44" x2="280" y2="44"></line>
+
+    <path d="M 0 66
+             L 40 58
+             L 80 62
+             L 120 50
+             L 160 44
+             L 200 40
+             L 240 36
+             L 280 30
+             L 280 88
+             L 0 88 Z" fill="url(#areaGrad)"></path>
+
+    <path class="stroke" d="M 0 66
+                            L 40 58
+                            L 80 62
+                            L 120 50
+                            L 160 44
+                            L 200 40
+                            L 240 36
+                            L 280 30" fill="none" stroke="#4EA1FF" stroke-width="3"></path>
+  </g>
+</svg>

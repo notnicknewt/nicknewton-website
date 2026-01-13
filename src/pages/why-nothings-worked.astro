@@ -1,0 +1,325 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import ChatWidget from '../components/ChatWidget.astro';
+import BackToTop from '../components/BackToTop.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Why Nothing's Worked - Nick Newton Coaching">
+	<Header />
+
+	<main class="bg-brand-dark pt-24 pb-16">
+		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+			<!-- Page Header -->
+			<div class="text-center mb-16">
+				<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-text mb-6">
+					You've tried before. Here's why it didn't work.
+				</h1>
+				<p class="text-xl sm:text-2xl text-brand-muted">
+					It's not willpower. It's one of three patterns.
+				</p>
+			</div>
+
+			<!-- Pattern 1: Can't Start -->
+			<section class="mb-16">
+				<div class="flex items-center gap-4 mb-8">
+					<div class="w-16 h-16 bg-brand-accent rounded-full flex items-center justify-center flex-shrink-0">
+						<span class="text-white font-bold text-2xl">1</span>
+					</div>
+					<h2 class="text-3xl sm:text-4xl font-bold text-brand-text">
+						Can't Start
+					</h2>
+				</div>
+
+				<div class="space-y-6 pl-0 sm:pl-20">
+					<div class="bg-brand-gray p-6 rounded-lg border border-brand-accent/20">
+						<p class="text-brand-accent font-semibold text-lg mb-4">"I know what to do. I can't make myself do it."</p>
+						<p class="text-brand-muted mb-4">
+							You've got the gym membership. You've got the plan saved somewhere. You know exactly what you should be doing.
+						</p>
+						<p class="text-brand-muted mb-4">
+							But you can't make yourself start.
+						</p>
+						<p class="text-brand-muted mb-4">
+							Monday comes and goes. Next week. Next month. After this project. When things calm down.
+						</p>
+						<p class="text-brand-muted mb-4">
+							Planning becomes the action. Researching feels like progress. But you never actually begin.
+						</p>
+						<p class="text-brand-text font-semibold">
+							It's not laziness. If it were, you wouldn't have built what you've built. Something's blocking the start. And willpower isn't going to fix it.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Pattern 2: Can't Sustain -->
+			<section class="mb-16">
+				<div class="flex items-center gap-4 mb-8">
+					<div class="w-16 h-16 bg-brand-accent rounded-full flex items-center justify-center flex-shrink-0">
+						<span class="text-white font-bold text-2xl">2</span>
+					</div>
+					<h2 class="text-3xl sm:text-4xl font-bold text-brand-text">
+						Can't Sustain
+					</h2>
+				</div>
+
+				<div class="space-y-6 pl-0 sm:pl-20">
+					<div class="bg-brand-gray p-6 rounded-lg border border-brand-accent/20">
+						<p class="text-brand-accent font-semibold text-lg mb-4">"I start strong. Then life happens."</p>
+						<p class="text-brand-muted mb-4">
+							You've started before. Plenty of times.
+						</p>
+						<p class="text-brand-muted mb-4">
+							First few weeks are great. Gym before work. Meals on point. You remember why you wanted this.
+						</p>
+						<p class="text-brand-muted mb-4">
+							Then something happens. A client melts down. A deal goes sideways. The week piles up.
+						</p>
+						<p class="text-brand-muted mb-4">
+							And you fall off. Not dramatically. Just quietly. One skipped session becomes two. The meal prep stops. Before you know it, it's been two months.
+						</p>
+						<p class="text-brand-text font-semibold">
+							Reset. Start again. Same cycle. Three weeks on. Two months off. Repeat for years.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Pattern 3: Can't Progress -->
+			<section class="mb-16">
+				<div class="flex items-center gap-4 mb-8">
+					<div class="w-16 h-16 bg-brand-accent rounded-full flex items-center justify-center flex-shrink-0">
+						<span class="text-white font-bold text-2xl">3</span>
+					</div>
+					<h2 class="text-3xl sm:text-4xl font-bold text-brand-text">
+						Can't Progress
+					</h2>
+				</div>
+
+				<div class="space-y-6 pl-0 sm:pl-20">
+					<div class="bg-brand-gray p-6 rounded-lg border border-brand-accent/20">
+						<p class="text-brand-accent font-semibold text-lg mb-4">"I'm putting in work. Nothing's changing."</p>
+						<p class="text-brand-muted mb-4">
+							You're actually doing it. Three, four times a week. You show up.
+						</p>
+						<p class="text-brand-muted mb-4">
+							But the mirror hasn't changed. Maybe in months. Maybe in years.
+						</p>
+						<p class="text-brand-muted mb-4">
+							Different program. Different split. More volume. Less volume. Nothing moves.
+						</p>
+						<p class="text-brand-muted mb-4">
+							Or you're grinding but you've got nothing left. Dragging yourself through workouts. Weights feel heavier than they should.
+						</p>
+						<p class="text-brand-text font-semibold">
+							You're in motion. But you're not making progress.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Transition Block -->
+			<section class="mb-16">
+				<div class="text-center max-w-2xl mx-auto py-8">
+					<p class="text-2xl text-brand-text mb-4">Which one sounds familiar?</p>
+					<p class="text-xl text-brand-muted mb-4">
+						Maybe it's one. Maybe it's all three at different times.
+					</p>
+					<p class="text-brand-muted mb-4">
+						Different patterns. Same root cause.
+					</p>
+					<p class="text-brand-muted mb-4">
+						Your system is broken. Not you... the approach.
+					</p>
+					<p class="text-xl text-brand-text font-semibold">
+						More discipline won't fix it. Another program won't fix it. You need a system built for how life actually works when you're running a business.
+					</p>
+				</div>
+			</section>
+
+			<!-- Pattern Selector -->
+			<section class="mb-16">
+				<div class="bg-brand-gray p-8 sm:p-10 rounded-lg border border-brand-accent/30">
+					<h3 class="text-2xl sm:text-3xl font-bold text-brand-text mb-6 text-center">
+						Which one sounds like you?
+					</h3>
+
+					<!-- Selector Buttons -->
+					<div class="grid md:grid-cols-3 gap-4 mb-8">
+						<button
+							class="pattern-select-btn bg-brand-dark p-5 rounded-lg border-2 border-brand-accent/20 hover:border-brand-accent transition-all text-left"
+							data-pattern="start"
+						>
+							<p class="text-brand-accent font-bold mb-2">Can't Start</p>
+							<p class="text-brand-muted text-sm">"I know what I should do. I just can't make myself do it."</p>
+						</button>
+						<button
+							class="pattern-select-btn bg-brand-dark p-5 rounded-lg border-2 border-brand-accent/20 hover:border-brand-accent transition-all text-left"
+							data-pattern="sustain"
+						>
+							<p class="text-brand-accent font-bold mb-2">Can't Sustain</p>
+							<p class="text-brand-muted text-sm">"I start strong but always fall off."</p>
+						</button>
+						<button
+							class="pattern-select-btn bg-brand-dark p-5 rounded-lg border-2 border-brand-accent/20 hover:border-brand-accent transition-all text-left"
+							data-pattern="progress"
+						>
+							<p class="text-brand-accent font-bold mb-2">Can't Progress</p>
+							<p class="text-brand-muted text-sm">"I'm doing the work but nothing's changing."</p>
+						</button>
+					</div>
+
+					<!-- Expanded Responses -->
+					<div id="pattern-response-start" class="pattern-response hidden">
+						<div class="bg-brand-dark p-6 rounded-lg border-l-4 border-brand-accent">
+							<p class="text-brand-text mb-3">
+								You don't need more information. You need a start that's so small your brain can't talk you out of it.
+							</p>
+							<p class="text-brand-muted mb-3">
+								Day one isn't a 90-minute gym session. It's simple. Completable. Done.
+							</p>
+							<p class="text-brand-muted mb-3">
+								Small wins stack. Check-ins create accountability before motivation shows up.
+							</p>
+							<p class="text-brand-text font-semibold">
+								We don't wait for you to feel ready. We make starting inevitable.
+							</p>
+						</div>
+					</div>
+
+					<div id="pattern-response-sustain" class="pattern-response hidden">
+						<div class="bg-brand-dark p-6 rounded-lg border-l-4 border-brand-accent">
+							<p class="text-brand-text mb-3">
+								You don't need more motivation on Monday. You need a system that survives Thursday.
+							</p>
+							<p class="text-brand-muted mb-3">
+								Meals planned. Workouts programmed. Check-ins that keep you in the game even when the week explodes.
+							</p>
+							<p class="text-brand-muted mb-3">
+								You've already made 200 decisions at work. This isn't another one.
+							</p>
+							<p class="text-brand-text font-semibold">
+								When life blows up, you just execute. No thinking required.
+							</p>
+						</div>
+					</div>
+
+					<div id="pattern-response-progress" class="pattern-response hidden">
+						<div class="bg-brand-dark p-6 rounded-lg border-l-4 border-brand-accent">
+							<p class="text-brand-text mb-3">
+								You don't need to work harder. You need feedback.
+							</p>
+							<p class="text-brand-muted mb-3">
+								Daily check-ins make progress visible. Someone's actually watching.
+							</p>
+							<p class="text-brand-muted mb-3">
+								We track patterns. Adjust when something's not working. Know when to push and when to pull back.
+							</p>
+							<p class="text-brand-text font-semibold">
+								Effort finally has direction. And if you're running on empty, we fix that first.
+							</p>
+						</div>
+					</div>
+
+					<!-- CTA (shown after selection) -->
+					<div id="pattern-cta" class="hidden mt-8 text-center">
+						<button
+							class="btn-primary py-4 px-10 text-lg"
+							onclick="window.dispatchEvent(new CustomEvent('daisy:open'))"
+						>
+							Apply Now
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- Solution Bridge -->
+			<section class="mb-16">
+				<div class="bg-brand-dark p-8 sm:p-10 rounded-lg border border-brand-accent/30">
+					<h3 class="text-2xl sm:text-3xl font-bold text-brand-text mb-6 text-center">
+						Why This System Works
+					</h3>
+
+					<p class="text-brand-muted text-center mb-8">
+						Meals planned. Workouts programmed. Daily check-ins. This isn't random. It's designed for the three patterns that kill consistency.
+					</p>
+
+					<div class="grid md:grid-cols-3 gap-6 mb-8">
+						<div class="text-center">
+							<p class="text-brand-accent font-semibold mb-2">If you can't start</p>
+							<p class="text-brand-muted text-sm">Small wins from day one. Completion guaranteed. Your brain starts believing effort matters again.</p>
+						</div>
+						<div class="text-center">
+							<p class="text-brand-accent font-semibold mb-2">If you can't sustain</p>
+							<p class="text-brand-muted text-sm">No decisions when life blows up. The system survives without you babysitting it.</p>
+						</div>
+						<div class="text-center">
+							<p class="text-brand-accent font-semibold mb-2">If you can't progress</p>
+							<p class="text-brand-muted text-sm">Progress becomes visible. Someone's watching. Effort finally has direction.</p>
+						</div>
+					</div>
+
+					<p class="text-xl text-brand-text font-semibold text-center">
+						Your willpower stops being the bottleneck.
+					</p>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<section class="bg-brand-accent p-8 sm:p-12 rounded-lg text-center">
+				<h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">
+					Ready to fix what's actually broken?
+				</h2>
+				<p class="text-white/90 mb-8">
+					Start a quick chat with Daisy to see if we're a fit.
+				</p>
+				<button
+					class="bg-white text-brand-accent hover:bg-gray-100 font-bold py-4 px-10 text-lg transition-all duration-200"
+					onclick="window.dispatchEvent(new CustomEvent('daisy:open'))"
+				>
+					Chat with Daisy
+				</button>
+			</section>
+
+		</div>
+	</main>
+
+	<Footer />
+	<ChatWidget />
+	<BackToTop />
+</Layout>
+
+<script>
+	// Pattern selector logic
+	const patternBtns = document.querySelectorAll('.pattern-select-btn');
+	const patternResponses = document.querySelectorAll('.pattern-response');
+	const patternCta = document.getElementById('pattern-cta');
+
+	patternBtns.forEach(btn => {
+		btn.addEventListener('click', () => {
+			const pattern = btn.getAttribute('data-pattern');
+
+			// Update button states
+			patternBtns.forEach(b => {
+				b.classList.remove('border-brand-accent', 'bg-brand-accent/10');
+				b.classList.add('border-brand-accent/20');
+			});
+			btn.classList.add('border-brand-accent', 'bg-brand-accent/10');
+			btn.classList.remove('border-brand-accent/20');
+
+			// Show selected response
+			patternResponses.forEach(r => r.classList.add('hidden'));
+			const response = document.getElementById(`pattern-response-${pattern}`);
+			response?.classList.remove('hidden');
+
+			// Show CTA
+			patternCta?.classList.remove('hidden');
+
+			// Smooth scroll to response
+			response?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+		});
+	});
+</script>

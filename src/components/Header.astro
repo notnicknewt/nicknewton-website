@@ -1,0 +1,71 @@
+---
+// Header with navigation
+---
+
+<header class="bg-brand-dark border-b border-brand-muted sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
+    <div class="flex justify-between items-center">
+      <a href="/" class="text-xl sm:text-2xl font-bold text-brand-text hover:text-brand-accent transition-colors">
+        Nick Newton
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="/#the-problem" class="text-brand-muted hover:text-brand-text text-sm transition-colors">The Problem</a>
+        <a href="/why-nothings-worked" class="text-brand-muted hover:text-brand-text text-sm transition-colors">Why It Fails</a>
+        <a href="/#what-you-get" class="text-brand-muted hover:text-brand-text text-sm transition-colors">The System</a>
+        <a href="/how-it-works" class="text-brand-muted hover:text-brand-text text-sm transition-colors">How It Works</a>
+        <a href="/#proof" class="text-brand-muted hover:text-brand-text text-sm transition-colors">Proof</a>
+        <a href="/#faq" class="text-brand-muted hover:text-brand-text text-sm transition-colors">FAQ</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <!-- Mobile menu button -->
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden text-brand-text p-2"
+          aria-label="Toggle menu"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <button
+          class="btn-primary text-sm py-2 px-4 sm:px-6"
+          onclick="window.dispatchEvent(new CustomEvent('daisy:open'))"
+        >
+          Chat
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <nav id="mobile-menu" class="hidden md:hidden pt-4 pb-2 border-t border-brand-muted mt-3">
+      <div class="flex flex-col gap-3">
+        <a href="/#the-problem" class="text-brand-muted hover:text-brand-text text-sm transition-colors py-2">The Problem</a>
+        <a href="/why-nothings-worked" class="text-brand-muted hover:text-brand-text text-sm transition-colors py-2">Why It Fails</a>
+        <a href="/#what-you-get" class="text-brand-muted hover:text-brand-text text-sm transition-colors py-2">The System</a>
+        <a href="/how-it-works" class="text-brand-muted hover:text-brand-text text-sm transition-colors py-2">How It Works</a>
+        <a href="/#proof" class="text-brand-muted hover:text-brand-text text-sm transition-colors py-2">Proof</a>
+        <a href="/#faq" class="text-brand-muted hover:text-brand-text text-sm transition-colors py-2">FAQ</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuBtn?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+
+  // Close mobile menu when clicking a link
+  mobileMenu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu?.classList.add('hidden');
+    });
+  });
+</script>

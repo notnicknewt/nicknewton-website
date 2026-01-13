@@ -1,0 +1,225 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import ChatWidget from '../components/ChatWidget.astro';
+import BackToTop from '../components/BackToTop.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="How It Works - Nick Newton Coaching">
+	<Header />
+
+	<main class="bg-brand-dark pt-24 pb-16">
+		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+			<!-- Page Header -->
+			<div class="text-center mb-16">
+				<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-text mb-6">
+					How It Works
+				</h1>
+				<p class="text-xl sm:text-2xl text-brand-muted">
+					What it actually looks like
+				</p>
+			</div>
+
+			<!-- Week 1: Setup -->
+			<section class="mb-16">
+				<div class="flex items-center gap-4 mb-8">
+					<div class="w-16 h-16 bg-brand-accent rounded-full flex items-center justify-center flex-shrink-0">
+						<span class="text-white font-bold text-2xl">1</span>
+					</div>
+					<h2 class="text-3xl sm:text-4xl font-bold text-brand-text">
+						Week 1: Setup
+					</h2>
+				</div>
+
+				<div class="space-y-6 pl-0 sm:pl-20">
+					<div class="bg-brand-gray p-6 rounded-lg border border-brand-accent/20">
+						<h3 class="text-xl font-bold text-brand-text mb-3">Onboarding call (45 min)</h3>
+						<p class="text-brand-muted">
+							We go through your schedule, your obstacles, what's failed before, and what success looks like for you. I build your plan around your actual life, not a template.
+						</p>
+					</div>
+
+					<div class="bg-brand-gray p-6 rounded-lg border border-brand-accent/20">
+						<h3 class="text-xl font-bold text-brand-text mb-3">Meal plan delivered</h3>
+						<p class="text-brand-muted">
+							Not a PDF of "eat chicken and broccoli." A weekly plan with recipes, a shopping list, and a prep guide. Cook once on Sunday, eat all week. Fits around client dinners and travel.
+						</p>
+					</div>
+
+					<div class="bg-brand-gray p-6 rounded-lg border border-brand-accent/20">
+						<h3 class="text-xl font-bold text-brand-text mb-3">Training program loaded into your app</h3>
+						<p class="text-brand-muted">
+							1-hour sessions. 4x per week. Video demos for every movement. No guesswork. Show up, follow the app, done.
+						</p>
+					</div>
+
+					<div class="bg-brand-gray p-6 rounded-lg border border-brand-accent/20">
+						<h3 class="text-xl font-bold text-brand-text mb-3">Daily check-ins start</h3>
+						<p class="text-brand-muted">
+							You'll hear from me every day.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Every Day: The Check-in -->
+			<section class="mb-16">
+				<div class="flex items-center gap-4 mb-8">
+					<div class="w-16 h-16 bg-brand-accent rounded-full flex items-center justify-center flex-shrink-0">
+						<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+						</svg>
+					</div>
+					<h2 class="text-3xl sm:text-4xl font-bold text-brand-text">
+						Every Day: The Check-in
+					</h2>
+				</div>
+
+				<div class="pl-0 sm:pl-20 space-y-6">
+					<div class="bg-brand-gray p-6 rounded-lg border border-brand-accent/20">
+						<p class="text-brand-text font-semibold mb-4">Takes 2 minutes. You tell me:</p>
+						<ul class="space-y-2 text-brand-muted">
+							<li class="flex items-start gap-3">
+								<span class="text-brand-accent">•</span>
+								What you ate
+							</li>
+							<li class="flex items-start gap-3">
+								<span class="text-brand-accent">•</span>
+								Whether you trained
+							</li>
+							<li class="flex items-start gap-3">
+								<span class="text-brand-accent">•</span>
+								What's coming up (travel, stress, events)
+							</li>
+						</ul>
+					</div>
+
+					<div class="bg-brand-gray p-6 rounded-lg border border-brand-accent/20">
+						<p class="text-brand-text font-semibold mb-4">I respond. Not with "great job, keep going." With actual feedback:</p>
+						<ul class="space-y-2 text-brand-muted">
+							<li class="flex items-start gap-3">
+								<span class="text-brand-accent">•</span>
+								Adjustments if something's off
+							</li>
+							<li class="flex items-start gap-3">
+								<span class="text-brand-accent">•</span>
+								Accountability if you're sliding
+							</li>
+							<li class="flex items-start gap-3">
+								<span class="text-brand-accent">•</span>
+								Pattern recognition you'd never catch yourself
+							</li>
+						</ul>
+					</div>
+
+					<p class="text-xl text-brand-text font-semibold">
+						This isn't a form you fill out and forget. It's a conversation.
+					</p>
+				</div>
+			</section>
+
+			<!-- Every Week: Strategy Call -->
+			<section class="mb-16">
+				<div class="flex items-center gap-4 mb-8">
+					<div class="w-16 h-16 bg-brand-accent rounded-full flex items-center justify-center flex-shrink-0">
+						<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+						</svg>
+					</div>
+					<h2 class="text-3xl sm:text-4xl font-bold text-brand-text">
+						Every Week: Strategy Call
+					</h2>
+				</div>
+
+				<div class="pl-0 sm:pl-20">
+					<div class="bg-brand-gray p-6 rounded-lg border border-brand-accent/20">
+						<p class="text-brand-text font-semibold mb-4">30 minutes. Video or phone.</p>
+						<ul class="space-y-2 text-brand-muted mb-6">
+							<li class="flex items-start gap-3">
+								<span class="text-brand-accent">•</span>
+								What's working
+							</li>
+							<li class="flex items-start gap-3">
+								<span class="text-brand-accent">•</span>
+								What's not
+							</li>
+							<li class="flex items-start gap-3">
+								<span class="text-brand-accent">•</span>
+								What's getting in the way
+							</li>
+							<li class="flex items-start gap-3">
+								<span class="text-brand-accent">•</span>
+								Adjustments to training and nutrition
+							</li>
+						</ul>
+						<p class="text-brand-text font-semibold">
+							You leave with a clear plan for the next 7 days.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- What You're Not Getting -->
+			<section class="mb-16">
+				<div class="flex items-center gap-4 mb-8">
+					<div class="w-16 h-16 bg-brand-gray border-2 border-brand-accent/30 rounded-full flex items-center justify-center flex-shrink-0">
+						<svg class="w-8 h-8 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+						</svg>
+					</div>
+					<h2 class="text-3xl sm:text-4xl font-bold text-brand-text">
+						What You're Not Getting
+					</h2>
+				</div>
+
+				<div class="pl-0 sm:pl-20">
+					<div class="grid sm:grid-cols-2 gap-4 mb-8">
+						<div class="bg-brand-gray p-4 rounded-lg border border-brand-accent/20 flex items-center gap-3">
+							<span class="text-brand-accent text-xl">✕</span>
+							<span class="text-brand-muted">Generic PDFs</span>
+						</div>
+						<div class="bg-brand-gray p-4 rounded-lg border border-brand-accent/20 flex items-center gap-3">
+							<span class="text-brand-accent text-xl">✕</span>
+							<span class="text-brand-muted">An app you'll forget about</span>
+						</div>
+						<div class="bg-brand-gray p-4 rounded-lg border border-brand-accent/20 flex items-center gap-3">
+							<span class="text-brand-accent text-xl">✕</span>
+							<span class="text-brand-muted">A coach who replies once a week</span>
+						</div>
+						<div class="bg-brand-gray p-4 rounded-lg border border-brand-accent/20 flex items-center gap-3">
+							<span class="text-brand-accent text-xl">✕</span>
+							<span class="text-brand-muted">"Listen to your body" when you skip</span>
+						</div>
+					</div>
+
+					<p class="text-xl text-brand-text">
+						You're getting a system that runs daily, a human who pays attention, and accountability that doesn't let you off the hook.
+					</p>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<section class="bg-brand-accent p-8 sm:p-12 rounded-lg text-center">
+				<h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">
+					Ready to start?
+				</h2>
+				<p class="text-white/90 mb-8">
+					Start a quick chat with Daisy to see if we're a fit.
+				</p>
+				<button
+					class="bg-white text-brand-accent hover:bg-gray-100 font-bold py-4 px-10 text-lg transition-all duration-200"
+					onclick="window.dispatchEvent(new CustomEvent('daisy:open'))"
+				>
+					Chat with Daisy
+				</button>
+			</section>
+
+		</div>
+	</main>
+
+	<Footer />
+	<ChatWidget />
+	<BackToTop />
+</Layout>

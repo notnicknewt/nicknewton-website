@@ -1,0 +1,36 @@
+---
+// Footer component
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-brand-dark border-t border-brand-muted py-12">
+  <div class="section-container">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center space-y-6">
+        <div>
+          <h3 class="text-2xl font-bold text-brand-text mb-2">
+            Nick Newton Coaching
+          </h3>
+          <p class="text-brand-muted">
+            Elite fitness coaching for high-achieving entrepreneurs
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-6 justify-center items-center text-sm text-brand-muted">
+          <a href="#" class="hover:text-brand-accent transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-brand-accent transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-brand-accent transition-colors">Contact</a>
+        </div>
+
+        <div class="pt-6 border-t border-brand-muted">
+          <p class="text-brand-muted text-sm">
+            &copy; {currentYear} Nick Newton Coaching. All rights reserved.
+          </p>
+          <p class="text-brand-muted text-xs mt-2 italic">
+            Built for entrepreneurs who don't have time for bullshit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -6,9 +6,15 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   integrations: [tailwind()],
   output: 'static',
+  server: {
+    host: true
+  },
   vite: {
     preview: {
-      allowedHosts: ['nicknewton-website-production.up.railway.app', '.railway.app']
+      allowedHosts: true
+    },
+    server: {
+      allowedHosts: true
     }
   }
 });
